@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check if string contains substring
-        if: "'Hello world' contains 'llo'"
+        if: Hello world contains 'llo'
         run: echo "The string contains the substring."
       - name: Check if string starts with
         if: "'Hello world' startsWith 'He'"

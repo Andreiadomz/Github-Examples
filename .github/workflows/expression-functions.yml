@@ -28,7 +28,8 @@ jobs:
         run: "echo \"Hash of files: ${{ hashFiles('**/package-lock.json', '**/Gemfile.lock') }}\""
       - name: The job has succeeded
         if: ${{ success() }}
-        uses: actions/github-script@v4
+        run: echo "The job has succeeded."
       - name: The job has failed
         if: failure()
-        uses: actions/github-script@v4
+        run: echo "The job has failed."
+      

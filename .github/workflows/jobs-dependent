@@ -1,6 +1,9 @@
 name: Jobs Dependent
 
-on: ['push']
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   job2:
@@ -15,4 +18,5 @@ jobs:
     steps:
       - name: stepB
         run: echo "Hellop"
+
 

@@ -8,12 +8,11 @@ jobs:
     needs: job1
     steps:
       - name: stepA
-        run: echo 'Worldy'
+        run: echo "Worldy"
 
   job1:
     runs-on: ubuntu-latest
     steps:
       - name: stepB
-        run: echo 'Hellop'
-
+        run: echo "Hellop"
 

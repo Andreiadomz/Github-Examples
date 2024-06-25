@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: job1
     steps:
-      name: stepA
-      run: echo 'Worldy'
+      - name: stepA
+        run: echo 'Worldy'
 
   job1:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: stepB
         run: echo 'Hellop'
 
